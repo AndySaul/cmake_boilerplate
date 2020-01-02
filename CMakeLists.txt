@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_INSTALL_PREFIX outputs)
+set_property(GLOBAL PROPERTY USE_FOLDERS On)
 
 project(All VERSION 1.0)
 
