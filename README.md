@@ -2,6 +2,7 @@
 Hello World CMake project with GoogleTest support. A template for cross-platform apps
 
 https://cmake.org/runningcmake/
+https://cmake.org/cmake/help/latest/index.html
 
 ## Generating a Windows build
 
