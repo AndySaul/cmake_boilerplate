@@ -6,4 +6,4 @@ namespace message {
 
 std::string greeting();
 
-}
+} // namespace message

@@ -1,6 +1,9 @@
 #include "Message.h"
 
-std::string message::greeting()
+using namespace message;
+using namespace std::string_literals;
+
+auto message::greeting() -> std::string
 {
-  return {"Hello, World!"};
+  return "Hello, World!"s;
 }
