@@ -1,14 +1,30 @@
 # cmake_boilerplate
-Hello World CMake project with GoogleTest support. A template for cross-platform apps
+Hello World CMake project with GoogleTest support. A template for
+cross-platform apps
 
 https://cmake.org/runningcmake/
+
 https://cmake.org/cmake/help/latest/index.html
 
-## Generating a Windows build
+## Building with CLion
+
+The easiest way to open with CLion is to explore to the checkout 
+folder and select *Open Folder as CLion Project* from the context
+menu
+
+CLion will automatically generate configurations to build and run from
+the CMakeLists.txt files
+
+Note that CLion will generate different build folders for debug and 
+release builds. The binaries will be generated in the
+*<cmake-build-xxx/bin* folder
+
+## Generating a Visual Studio build
 
 You can use CMake GUI to create a Visual Studio project
 
-Don't forget to select the correct generator. CMake GUI will default to Win32 build, so you must specify x64 for a 64-bit binary
+Don't forget to select the correct generator. CMake GUI will default
+to Win32 build, so you must specify x64 for a 64-bit binary
 
 ## Building for linux
 
@@ -16,43 +32,67 @@ Use cmake command line to generate an out-of-source build
 
 First, create a subdirectory for the build & cd into it 
 
-`mdkdir build_linux && cd build_linux`
+```
+mdkdir build_linux && cd build_linux
+```
 
 Generate the build
 
-`cmake ..`
+```
+cmake ..
+```
 
 Run the build command to actually build the binaries
 
-`cmake --build .`
+```
+cmake --build .
+```
 
 Binaries can be build by directory. Dependencies are also built
 
-`cmake --build HelloWorld`
+```
+cmake --build HelloWorld
+```
 
-The binaries will be generated in the *bin* subdir & can be executed with 
+The binaries will be generated in the *bin* subdir & can be executed
+with 
 
-`bin/HelloWorld` or `bin/Message_tests`
+```
+bin/HelloWorld
+ ```
 
 You can also run tests using the ctest command.
 
-`ctest`
+```
+ctest
+```
 
-CTest does not build the tests. You can chain commands to build & run tests:
- 
-`cmake --build . && ctest`
+CTest does not build the tests. You can chain commands to build & run
+tests:
 
-By default, the test output is not displayed when ctest is run. You can use the *verbose* flag to show test results
+```
+cmake --build . && ctest
+```
 
-`ctest -V`
+By default, the test output is not displayed when ctest is run. You
+can use the *verbose* flag to show test results
+
+```
+ctest -V
+```
 
 You can also specify tests to display output on failure
 
-`CTEST_OUTPUT_ON_FAILURE=1 ctest`
+```
+CTEST_OUTPUT_ON_FAILURE=1 ctest
+```
 
-The easiest way to clean the project is to delete the entire build directory
+The easiest way to clean the project is to delete the entire build
+directory
 
-`cd .. && rm -rf build_linux`
+```
+cd .. && rm -rf build_linux
+```
 
 
 
