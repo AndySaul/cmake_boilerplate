@@ -1,9 +1,9 @@
 #pragma once
 
-namespace all {
+namespace AndySaul {
 namespace version {
 
-constexpr int MAJOR{@All_VERSION_MAJOR@};
-constexpr int MINOR{@All_VERSION_MINOR@};
+constexpr int MAJOR{@AndySaul_VERSION_MAJOR@};
+constexpr int MINOR{@AndySaul_VERSION_MINOR@};
 }
 }
