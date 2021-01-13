@@ -46,5 +46,6 @@ enable_testing()
 
 add_subdirectory(HelloWorld)
 add_subdirectory(Message)
+add_subdirectory(Widget)
 
 add_subdirectory(external)
