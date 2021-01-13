@@ -17,7 +17,7 @@ the CMakeLists.txt files
 
 Note that CLion will generate different build folders for debug and 
 release builds. The binaries will be generated in the
-*<cmake-build-xxx/bin* folder
+*cmake-build-xxx/bin* folder
 
 ## Generating a Visual Studio build
 
