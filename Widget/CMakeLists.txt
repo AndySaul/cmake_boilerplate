@@ -1,6 +1,6 @@
 
-set(HEADER_FILES Widget.h)
-set(SOURCES Widget.cpp)
+set(HEADER_FILES Widget.h Gadget.h)
+set(SOURCES Widget.cpp Gadget.cpp)
 
 add_library(Widget ${SOURCES} ${HEADER_FILES})
 
