@@ -12,6 +12,6 @@ public:
   int combine(int a, int b) const override;
 };
 
-}
+} // namespace AndySaul::Widget
 
 #endif // ANDYSAUL_GADGET_H

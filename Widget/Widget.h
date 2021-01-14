@@ -13,6 +13,8 @@ public:
   virtual int combine(int x, int y) const = 0;
 };
 
+int Use(Widget &widget);
+
 } // namespace AndySaul::Widget
 
 #endif // ANDYSAUL_WIDGET_H
