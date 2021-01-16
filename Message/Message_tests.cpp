@@ -12,4 +12,3 @@ TEST(Message, displays_hello_world)
 {
   EXPECT_EQ("Hello, World!"s, greeting());
 }
-
