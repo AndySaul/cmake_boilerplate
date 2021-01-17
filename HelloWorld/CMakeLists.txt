@@ -1,5 +1,5 @@
 
-add_executable(HelloWorld HelloWorld.cpp)
+add_executable(HelloWorld main.cpp)
 
 target_link_libraries(HelloWorld project_warnings Message Widget)
 
