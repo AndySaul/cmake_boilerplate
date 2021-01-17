@@ -1,7 +1,5 @@
 
-set(SOURCES HelloWorld.cpp)
-
-add_executable(HelloWorld ${SOURCES})
+add_executable(HelloWorld HelloWorld.cpp)
 
 target_link_libraries(HelloWorld project_warnings Message Widget)
 

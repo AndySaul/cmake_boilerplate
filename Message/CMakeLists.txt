@@ -1,8 +1,5 @@
 
-set(HEADER_FILES Message.h)
-set(SOURCES Message.cpp)
-
-add_library(Message ${SOURCES} ${HEADER_FILES})
+add_library(Message Message.h Message.cpp)
 
 target_include_directories(Message INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(Message project_warnings)

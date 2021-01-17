@@ -1,8 +1,5 @@
 
-set(HEADER_FILES Widget.h Gadget.h)
-set(SOURCES Widget.cpp Gadget.cpp)
-
-add_library(Widget ${SOURCES} ${HEADER_FILES})
+add_library(Widget Widget.h Widget.cpp Gadget.h Gadget.cpp)
 
 target_include_directories(Widget INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(Widget project_warnings)
