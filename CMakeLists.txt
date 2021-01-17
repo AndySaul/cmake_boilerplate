@@ -30,7 +30,6 @@ else ()
             -Wsign-conversion
             -Wmisleading-indentation
             -Wduplicated-cond
-            -Wduplicated-branches
             -Wlogical-op
             -Wnull-dereference
             -Wuseless-cast
