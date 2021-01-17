@@ -32,6 +32,7 @@ else ()
             -Wuseless-cast
             -Wdouble-promotion
             -Wformat=2
+            -Werror
             )
 endif ()
 
