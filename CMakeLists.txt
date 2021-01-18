@@ -15,9 +15,9 @@ set_project_warnings(project_warnings)
 include(FetchContent)
 
 FetchContent_Declare(
-        Corrosion
-        GIT_REPOSITORY https://github.com/AndrewGaspar/corrosion.git
-        GIT_TAG origin/master # Optionally specify a version tag or branch here
+  Corrosion
+  GIT_REPOSITORY https://github.com/AndrewGaspar/corrosion.git
+  GIT_TAG origin/master
 )
 
 FetchContent_MakeAvailable(Corrosion)

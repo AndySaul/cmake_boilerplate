@@ -1,4 +1,3 @@
-
 add_executable(HelloWorld main.cpp)
 
 target_link_libraries(HelloWorld project_warnings Message Widget rust_example)
