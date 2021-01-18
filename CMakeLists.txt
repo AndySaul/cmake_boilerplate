@@ -9,32 +9,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
 
 add_library(project_warnings INTERFACE)
 
-if (MSVC)
-    target_compile_options(project_warnings INTERFACE /W4 /WX)
-else ()
-    target_compile_options(project_warnings
-            INTERFACE
-            -Wall
-            -Wextra
-            -Wshadow
-            -Wnon-virtual-dtor
-            -Wold-style-cast
-            -Wcast-align
-            -Wunused
-            -Woverloaded-virtual
-            -Wpedantic
-            -Wconversion
-            -Wsign-conversion
-            -Wmisleading-indentation
-            -Wduplicated-cond
-            -Wlogical-op
-            -Wnull-dereference
-            -Wuseless-cast
-            -Wdouble-promotion
-            -Wformat=2
-            -Werror
-            )
-endif ()
+include(cmake/CompilerWarnings.cmake)
+set_project_warnings(project_warnings)
 
 include(FetchContent)
 
