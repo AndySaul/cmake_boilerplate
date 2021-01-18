@@ -36,10 +36,22 @@ else ()
             )
 endif ()
 
+include(FetchContent)
+
+FetchContent_Declare(
+        Corrosion
+        GIT_REPOSITORY https://github.com/AndrewGaspar/corrosion.git
+        GIT_TAG origin/master # Optionally specify a version tag or branch here
+)
+
+FetchContent_MakeAvailable(Corrosion)
+
 configure_file(Version.in Version.h)
 install(FILES "${PROJECT_BINARY_DIR}/Config.h" DESTINATION include)
 
 enable_testing()
+
+corrosion_import_crate(MANIFEST_PATH rust-lib/Cargo.toml)
 
 add_subdirectory(HelloWorld)
 add_subdirectory(Message)
