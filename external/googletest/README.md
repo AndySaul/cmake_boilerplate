@@ -4,7 +4,7 @@
 I could have used this technique:
 ```cmake
 find_package(GTest CONFIG REQUIRED)
-...
+
 target_link_libraries(Message_tests GTest::main GTest::gmock project_warnings Message)
 ```
 
