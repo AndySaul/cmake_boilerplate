@@ -2,6 +2,9 @@
 Hello World CMake project with GoogleTest support. A template for
 cross-platform apps
 
+This project was influenced by [lefticus/cpp_starter_project](https://github.com/lefticus/cpp_starter_project).
+However, I wanted to build it myself from the ground up as a learning exercise
+
 https://cmake.org/runningcmake/
 
 https://cmake.org/cmake/help/latest/index.html
@@ -19,16 +22,29 @@ Note that CLion will generate different build folders for debug and
 release builds. The binaries will be generated in the
 *cmake-build-xxx/bin* folder
 
-## Generating a Visual Studio build
+## Building with Visual Studio
 
-You can use CMake GUI to create a Visual Studio project
+Recent versions of Visual Studio support CMake
+
+https://devblogs.microsoft.com/cppblog/cmake-support-in-visual-studio/
+
+CTest is aso integrated into Test Explorer
+
+https://docs.microsoft.com/en-us/visualstudio/test/how-to-use-ctest-for-cpp?view=vs-2019
+
+You can also use CMake GUI to create a Visual Studio project
 
 Don't forget to select the correct generator. CMake GUI will default
 to Win32 build, so you must specify x64 for a 64-bit binary
 
-## Building for linux
+## Building from the command line
 
-Use cmake command line to generate an out-of-source build
+This method may be used for Linux builds
+
+These commands also work for Windows command line, but some features 
+such as *&&* may not be available
+
+Use cmake command line to generate an *out-of-source build*
 
 First, create a subdirectory for the build & cd into it 
 
@@ -55,11 +71,16 @@ cmake --build HelloWorld
 ```
 
 The binaries will be generated in the *bin* subdir & can be executed
-with 
+on Linux with
 
 ```
 bin/HelloWorld
  ```
+
+On Windows, you must specify the sub-directory for the build type:
+```
+.\bin\Debug\HelloWorld.exe
+```
 
 You can also run tests using the ctest command.
 
