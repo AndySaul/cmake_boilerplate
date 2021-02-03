@@ -9,6 +9,8 @@ https://cmake.org/runningcmake/
 
 https://cmake.org/cmake/help/latest/index.html
 
+In order to build the Rust components, don't forget to [install Rust](https://www.rust-lang.org/tools/install)
+
 ## Building with CLion
 
 The easiest way to open with CLion is to explore to the checkout 
