@@ -9,7 +9,7 @@ pub extern "C" fn combine(x: u32, y: u32) -> u32 {
 }
 
 #[cfg(test)]
-mod tests {
+mod hello_from_rust_tests {
     #[test]
     fn it_works() {
         assert_eq!(crate::combine(40, 2), 42);
