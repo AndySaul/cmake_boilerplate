@@ -5,4 +5,4 @@ FetchContent_Declare(
         GIT_TAG origin/master
 )
 
-add_subdirectory(rust-lib)
+add_subdirectory(hello_from_rust)
