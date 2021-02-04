@@ -1,0 +1,3 @@
+FetchContent_MakeAvailable(Corrosion)
+
+corrosion_import_crate(MANIFEST_PATH Cargo.toml)
