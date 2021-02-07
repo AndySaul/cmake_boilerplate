@@ -1,5 +1,8 @@
-FetchContent_MakeAvailable(Corrosion)
-
+if(CORROSION_INSTALLED)
+  find_package(Corrosion REQUIRED)
+else()
+  FetchContent_MakeAvailable(Corrosion)
+endif()
 corrosion_import_crate(MANIFEST_PATH Cargo.toml)
 
 # Corrosion doesn't support CTest yet This block assumes cargo is in the path
