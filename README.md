@@ -79,11 +79,6 @@ on Linux with
 bin/HelloWorld
  ```
 
-On Windows, you must specify the sub-directory for the build type:
-```
-.\bin\Debug\HelloWorld.exe
-```
-
 You can also run tests using the ctest command.
 
 ```
@@ -114,6 +109,16 @@ To clean the project, delete the entire build directory
 
 ```
 cd .. && rm -rf build_linux
+```
+### Windows command line
+
+```
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release
+ctest -V -C Release
+./bin/Release/HelloWorld.exe
 ```
 
 
