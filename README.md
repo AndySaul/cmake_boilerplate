@@ -98,7 +98,7 @@ cmake --build . && ctest
 ```
 
 By default, the test output is not displayed when ctest is run. You
-can use the *verbose* flag to show test results
+can use the *S* flag to show test results
 
 ```
 ctest -V
@@ -107,11 +107,10 @@ ctest -V
 You can also specify tests to display output on failure
 
 ```
-CTEST_OUTPUT_ON_FAILURE=1 ctest
+ctest --output-on-failure
 ```
 
-The easiest way to clean the project is to delete the entire build
-directory
+To clean the project, delete the entire build directory
 
 ```
 cd .. && rm -rf build_linux
