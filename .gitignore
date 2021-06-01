@@ -6,3 +6,7 @@
 /.vs/
 /out/
 /venv/
+/Release/
+/Debug/
+
+Folder.DotSettings.user
